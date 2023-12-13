@@ -8,6 +8,7 @@
 import Foundation
 
 public class User {
+    //Declared All necessary variables to User Class
     var firstName: String
     var lastName: String
     var email: String
