@@ -17,7 +17,7 @@ public class Product {
         self.price = price
         self.harvestTime = harvestTime
     }
-    static func getProducts() -> [Product] {
+    static func get_Products() -> [Product] {
         return Manager.share.productsList.products
     }
     
@@ -36,12 +36,12 @@ public class ProductList{
         Product(name: "Broccoli", price: 200.0, harvestTime: "2023-11-25")
     ]
     
-    func addElement(name: String, price: Double, harvestTime: String) {
+    func add_Element(name: String, price: Double, harvestTime: String) {
         let newProduct = Product(name: name, price: price, harvestTime: harvestTime)
         Manager.share.productsList.products.append(newProduct)
     }
     
-    func removeElement() {
+    func remove_Element() {
         Manager.share.productsList.updated()
         print("Enter number of product: ", terminator: "")
         let index = Int(readLine() ?? " ")
