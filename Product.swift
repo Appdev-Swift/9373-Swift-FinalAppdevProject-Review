@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+//Class for Product Class
 public class Product {
     var name: String
     var price: Double
