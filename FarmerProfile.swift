@@ -12,7 +12,7 @@ public class FarmerProfile {
     /**
      Displays the main menu choices
      */
-    func sellerMenu() {
+    func seller_Menu() {
         while true{
             print("\n--------------- Welcome Seller ---------------")
             print("1. Add Products") //Equivalent to sell products
@@ -42,7 +42,7 @@ public class FarmerProfile {
     /**
      allows seller to add products
      */
-    func AddProduct(){
+    func add_Product(){
         print("Enter product name: ", terminator: "")
         let productName = readLine() ?? ""
         print("Enter your price: ", terminator: "")
@@ -58,7 +58,7 @@ public class FarmerProfile {
     /**
      Displays learning materials for seller
      */
-    func displayMaterials(){
+    func display_Materials(){
         print("""
 "1. Revolutionizing Agriculture: Modern Farming Practices in the Philippines - Agustin, Aljay"
 "2. Sustainable Farming Solutions for Filipino Farmers - Aque, Eury"
