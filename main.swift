@@ -23,9 +23,7 @@ func mainMenu() {
         print("2. Login")
         print("3. Quit\n")
         print("Enter choice: ", terminator: "")
-        
-        
-        
+            
         if let choice = readLine(), let intChoice = Int(choice) {
             switch intChoice {
             case 1:
@@ -42,9 +40,6 @@ func mainMenu() {
                 // Example usage:
                 let contactNumber = getValidContactNumber()
                 print("You entered a valid contact number: \(contactNumber)")
-
-
-            
                 print("\nEmail:")
                 let email = readLine() ?? ""
                 var role: String = ""
@@ -67,7 +62,7 @@ func mainMenu() {
                 let username = readLine() ?? ""
                 print("Enter your password: ")
                 let password = readLine() ?? ""
-                
+
                 if let user = userInfo.login(username: username, password: password) {
                     print("\nLogin Successful!")
                     
@@ -115,6 +110,5 @@ func mainMenu() {
             
             return userInput
         }
-
     }
 }
