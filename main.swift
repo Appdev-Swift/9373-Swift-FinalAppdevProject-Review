@@ -81,6 +81,7 @@ func mainMenu() {
                 print("\nInvalid choice. Please enter 1-3 only.\n")
             }
         }
+     
         func isContactNumberValid(_ contactNumber: String) -> Bool {
             // Define your criteria for a valid contact number
             let digitSet = CharacterSet.decimalDigits
